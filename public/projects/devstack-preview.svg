@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="stackBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c14"/>
+      <stop offset="50%" stop-color="#121021"/>
+      <stop offset="100%" stop-color="#191333"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="450" fill="url(#stackBg)"/>
+
+  <!-- Glows -->
+  <circle cx="200" cy="100" r="130" fill="#a855f7" opacity="0.14" filter="blur(40px)"/>
+  <circle cx="650" cy="350" r="150" fill="#4f46e5" opacity="0.15" filter="blur(40px)"/>
+
+  <!-- App Window -->
+  <rect x="60" y="40" width="680" height="370" rx="12" fill="#0d0e17" stroke="#2d2850" stroke-width="1.5"/>
+
+  <!-- Window Header -->
+  <rect x="60" y="40" width="680" height="42" rx="12" fill="#141324"/>
+  <rect x="60" y="70" width="680" height="12" fill="#141324"/>
+  <circle cx="85" cy="61" r="5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="102" cy="61" r="5" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="119" cy="61" r="5" fill="#10b981" opacity="0.8"/>
+
+  <text x="150" y="65" font-family="monospace" font-size="12" fill="#a78bfa">dev-stack-builder // configure-workspace</text>
+
+  <!-- Left Column: Tooling Selector -->
+  <rect x="85" y="100" width="310" height="285" rx="8" fill="#121222" stroke="#262347" stroke-width="1"/>
+  <text x="105" y="130" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700" fill="#ffffff">Select Stack Components</text>
+  <text x="105" y="148" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#71717a">Configure your frontend and backend presets</text>
+
+  <!-- Component Selectors -->
+  <!-- Active Item 1 -->
+  <rect x="105" y="165" width="270" height="38" rx="6" fill="#1f1c3d" stroke="#8b5cf6" stroke-width="1.2"/>
+  <circle cx="125" cy="184" r="7" fill="#8b5cf6"/>
+  <text x="145" y="188" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">React + Vite</text>
+  <text x="320" y="188" font-family="monospace" font-size="10" fill="#a78bfa">v18.3</text>
+
+  <!-- Active Item 2 -->
+  <rect x="105" y="213" width="270" height="38" rx="6" fill="#1f1c3d" stroke="#8b5cf6" stroke-width="1.2"/>
+  <circle cx="125" cy="232" r="7" fill="#8b5cf6"/>
+  <text x="145" y="236" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">Tailwind CSS</text>
+  <text x="316" y="236" font-family="monospace" font-size="10" fill="#a78bfa">v4.0</text>
+
+  <!-- Active Item 3 -->
+  <rect x="105" y="261" width="270" height="38" rx="6" fill="#1f1c3d" stroke="#8b5cf6" stroke-width="1.2"/>
+  <circle cx="125" cy="280" r="7" fill="#8b5cf6"/>
+  <text x="145" y="284" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" fill="#ffffff">TypeScript Strict</text>
+  <text x="325" y="284" font-family="monospace" font-size="10" fill="#a78bfa">v5.x</text>
+
+  <!-- Item 4 -->
+  <rect x="105" y="309" width="270" height="38" rx="6" fill="#16152a" stroke="#252342" stroke-width="1"/>
+  <circle cx="125" cy="328" r="7" fill="#3b375b"/>
+  <text x="145" y="332" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="500" fill="#94a3b8">Node.js + Express</text>
+  <text x="315" y="332" font-family="monospace" font-size="10" fill="#64748b">Optional</text>
+
+  <!-- Right Column: Terminal Output / Config Preview -->
+  <rect x="415" y="100" width="305" height="285" rx="8" fill="#0b0b14" stroke="#262347" stroke-width="1"/>
+  <rect x="415" y="100" width="305" height="32" rx="8" fill="#151426"/>
+  <text x="430" y="121" font-family="monospace" font-size="11" fill="#94a3b8">package.json generation</text>
+
+  <!-- Code Snippet -->
+  <g font-family="monospace" font-size="11" fill="#cbd5e1">
+    <text x="435" y="155"><tspan fill="#8b5cf6">"name"</tspan>: <tspan fill="#38bdf8">"custom-dev-stack"</tspan>,</text>
+    <text x="435" y="177"><tspan fill="#8b5cf6">"version"</tspan>: <tspan fill="#38bdf8">"1.0.0"</tspan>,</text>
+    <text x="435" y="199"><tspan fill="#8b5cf6">"scripts"</tspan>: {</text>
+    <text x="455" y="221"><tspan fill="#8b5cf6">"dev"</tspan>: <tspan fill="#38bdf8">"vite"</tspan>,</text>
+    <text x="455" y="243"><tspan fill="#8b5cf6">"build"</tspan>: <tspan fill="#38bdf8">"tsc &amp;&amp; vite build"</tspan></text>
+    <text x="435" y="265">},</text>
+    <text x="435" y="287"><tspan fill="#8b5cf6">"dependencies"</tspan>: {</text>
+    <text x="455" y="309"><tspan fill="#8b5cf6">"react"</tspan>: <tspan fill="#34d399">"^18.3.1"</tspan>,</text>
+    <text x="455" y="331"><tspan fill="#8b5cf6">"tailwindcss"</tspan>: <tspan fill="#34d399">"^4.0.0"</tspan></text>
+    <text x="435" y="353">}</text>
+  </g>
+
+  <!-- Action button inside right column -->
+  <rect x="580" y="340" width="125" height="30" rx="6" fill="url(#accentGrad)"/>
+  <text x="600" y="359" font-family="system-ui, -apple-system, sans-serif" font-size="11" font-weight="600" fill="#ffffff">Export Stack</text>
+</svg>
